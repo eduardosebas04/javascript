@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sesión 27a | Javascript</title>
+    <style>
+        .forma{
+            text-align: center;            
+            border-color: blue;
+            border-width: 2px;
+            border-style: solid;
+            width: 50%;
+            margin: auto;
+            background-color:greenyellow;
+            margin-top: 50px;
+            height: 150px;
+            padding-top: 85px;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="resultado" class="forma" ></div>
+    <div id="frase" class="forma" ></div>
+
+    <script>
+        var valor=10;
+        var VALOR=30;
+        var Valor=40;
+        var suma = valor + VALOR + Valor;
+        document.getElementById('resultado').innerHTML="Resultado de la suma : " + suma;                
+    </script>
+     
+    <script>
+        var valor1='Bienvenido a Certus';
+        var valor2="Bienvenido a Certus";
+        var valor3="Bienvenido a Certus '2023'";
+        var valor4='Bienvenido a Certus "2023"';
+        document.getElementById('frase').innerHTML = valor4;
+    </script>
 </body>
 </html>
