@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 26 | Javascript</title>
+</head>
+<body>
+    <div id="mensaje"></div>
+    <div id="resultado"></div>
+    <p id="sumatoria" style="text-align: center; font-size: 50px; background-color: aqua;">
+        Este es un párrafo
+    </p>
+    <script>
+        //Asignar valor a una variable
+        //texto es una variable
+        var texto ="Bienvenido a Certus";
+        document.getElementById('mensaje').innerHTML= texto;
+        var valor1 = 100;
+        var valor2 = 200;
+        var suma = valor1 + valor2;                
+        document.getElementById('resultado').innerHTML= suma;
+        document.getElementById('sumatoria').innerHTML= suma;
+    </script>
+</body>
+</html>

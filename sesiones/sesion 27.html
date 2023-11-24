@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 26 | Javascript</title>
+    <style>
+        .forma{
+            background-color: aquamarine; 
+            text-align: center;
+            height: 100px;
+            border: 2px solid red ;
+            margin: 30px;
+            padding-top: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mensaje" class="forma" ></div>
+    <div id="resultado" class="forma"></div>
+    
+    <script>
+        //_valor1 es una variable                
+        var _valor1 = 10;
+        //una variable puede tener en el primer caracter _, $ o una letra
+        var $valor2 = 20;
+        var resultado = _valor1 + $valor2;                
+        document.getElementById('resultado').innerHTML= "El resultado de la suma es : " + resultado;
+        var nombreInstituto ="Certus";
+        // + es un operador de encadenamiento, junta palabras
+        document.getElementById('mensaje').innerHTML="Bienvenido al Instituto " + nombreInstituto        
+    </script>
+</body>
+</html>
