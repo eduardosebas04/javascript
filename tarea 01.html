@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolares | Javascript</title>
+    <link rel="stylesheet" href="css/tarea.css">
+    <script src="js/tarea.js"></script>
+</head>
+<body>
+    <div>
+        <img src="img/Ferretería/banner03.jpg" class="imgp" alt="">
+    </div>
+    <table class="tablep">
+        <tr>
+            <td class="dr">
+                <img src="img/shutterstock.jpg" class="b" alt="">
+            </td>
+            <td>
+                <form action="">
+                    <table class="tablep">
+                        <tr>
+                            <td style="text-align: right;">
+                                <p>
+                                    IMAGE ID: 1439432960
+                                </p>
+                                <p>
+                                    www.shuttrstock.com
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>      
+    </table>
+    <!--Título-->
+    <div style="text-align: center; color: black;" >
+        <h3>CONVERSIÓN A SOLES</h3>
+    </div>
+    <!--Formulario de trabajo-->
+    <div>
+        <form action="">
+            <!--Table centrado-->
+            <table style="width: 30%; margin: auto;">
+                <tr>
+                    <td>Dólares</td>
+                    <td> <input type="text" id="txtV1"></td>
+                </tr>
+                <tr>
+                    <td>Tipos de cambio</td>
+                    <td> <input type="text" id="txtV2"></td>
+                </tr>
+                <tr>
+                    <td>Soles</td>
+                    <td> <input type="text" id="txtRes" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" onclick="sumar()" value="Calcular"></td>
+                    <td> <input type="button" class="btn" onclick="limpiar()" value="Limpiar"> </td>
+                </tr>
+            </table>    
+        </form>
+    </div>
+</body>
+</html>

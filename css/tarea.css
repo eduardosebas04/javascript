@@ -1,0 +1,48 @@
+.imgp{ /*imagen centrada*/
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+input[type=text]{
+    padding: 10px;           
+    border-radius: 5px;
+    width: 60%
+}
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px;  
+}
+.pie{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    padding-top: 30px;
+    position: absolute;
+    bottom: 5px;
+}
+.b{
+    height:105px; 
+    width:300px;
+    border-radius: 15%;
+    
+}
+.tablep{
+    margin: auto;
+    width: 80%;
+    background-color: rgb(217, 173, 90);
+    text-align: left;
+}
+.dr{
+    margin: auto;
+    width: 80%;
+    background-color: rgb(217, 173, 90);
+    text-align: left;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

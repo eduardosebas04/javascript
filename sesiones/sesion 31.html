@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 31</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <!--
+        sumar(20,30)
+        Donde 20 y 30 son llamados argumentos
+    -->
+    <button onclick="javascript:sumar(20,30);" > Sumar</button>
+    
+    <script>
+        // La función se llama sumar
+        // Tiene paramétros valor1 y valor2
+        function sumar(valor1, valor2){
+            var resultado = valor1 + valor2;
+            document.getElementById("resultado").innerHTML="El resultado de la suma es : "+resultado;
+        }
+    </script>    
+</body>
+</html>

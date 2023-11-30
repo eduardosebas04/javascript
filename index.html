@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suma | Javascript</title>
+    <style>
+        img{ /*imagen centrada*/
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input[type=text]{
+            background-color: rgb(249, 241, 219);
+            padding: 5px;
+            border: none;
+            width: 20%;
+        }
+        .btn{
+            background-color: black;
+            color: chartreuse;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 7px;
+        }
+        .pie{
+            background-color: black;
+            color: white;
+            width: 100%;
+            text-align: center;
+            height: 60px;
+            padding-top: 30px;
+            position: absolute;
+            bottom: 5px;
+        }
+        body{
+            background-image: url('img/Ferretería/tuerca.png');
+        }
+    </style>
+    <script>
+        function sumar(){
+            var v1 = document.getElementById('txtV1').value;   
+            var v2 = document.getElementById('txtV2').value;  
+            var v3 = document.getElementById('txtV3').value;   
+            var v4 = document.getElementById('txtV4').value;  
+            //parseInt es una función de js que convierte un texto a número 
+            var sm = parseInt(v1) + parseInt(v2)+parseInt(v3) + parseInt(v4);  
+            document.getElementById('txtRes').value = sm;
+            //Aplicando un color
+            document.getElementById('txtRes').style.backgroundColor="#A3CFF5";
+        }
+        function limpiar(){
+            document.getElementById('txtV1').value="";
+            document.getElementById('txtV2').value="";
+            document.getElementById('txtV3').value="";
+            document.getElementById('txtV4').value="";
+            document.getElementById('txtRes').value="";
+            document.getElementById('txtV1').focus(); //ubica el cursor
+            document.getElementById('txtRes').style.backgroundColor="#F9F1DB";   
+        }
+    </script>
 </head>
 <body>
-    
+    <!--Banner-->
+    <div>
+        <img src="img/Ferretería/banner03.jpg" alt="">
+    </div>
+
+    <!--Título-->
+    <div style="text-align: center; color: rgb(122, 121, 121);" >
+        <h3>SUMA DE VALORES</h3>
+        <h4>Versión 1.0</h4>
+    </div>
+    <!--Formulario de trabajo-->
+    <div>
+        <form action="">
+            <!--Table centrado-->
+            <table style="width: 30%; margin: auto;">
+                <tr>
+                    <td>Valor 1</td>
+                    <td> <input type="text" id="txtV1"></td>
+                </tr>
+                <tr>
+                    <td>Valor 2</td>
+                    <td> <input type="text" id="txtV2"></td>
+                </tr>
+                <tr>
+                    <td>Valor 3</td>
+                    <td> <input type="text" id="txtV3"></td>
+                </tr>
+                <tr>
+                    <td>Valor 4</td>
+                    <td> <input type="text" id="txtV4"></td>
+                </tr>
+                <tr>
+                    <td>Resultado</td>
+                    <td> <input type="text" id="txtRes" disabled  ></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" onclick="sumar()" value="Calcular"></td>
+                    <td> <input type="button" class="btn" onclick="limpiar()" value="Limpiar"> </td>
+                </tr>
+            </table>    
+        </form>
+    </div>
+
+    <!--pie de página-->
+    <div class="pie">
+        Elaborado por Eduardo Sebastian Valdivieso LLontop - Noviembre 2023 - 72669799@certus.edu.pe
+    </div>
 </body>
 </html>
