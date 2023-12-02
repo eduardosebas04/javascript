@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Javascript</title>
+    <link rel="stylesheet" href="css/tarea02.css"> 
+    <script src="js/tarea02.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Tienda de Productos</h1>
+    </header>
+
+    <div>
+        <form action="">
+            <table class="tb">
+                <tr>
+                    <td>Producto</td>
+                    <td>
+                        <select class="x" id="txtDistrito" onchange="mostrar_precio();">
+                            <option value="1">Aceite primor premium</option>
+                            <option value="2">Vinagre Blanca</option>
+                            <option value="3">Leche Gloria uht</option>
+                            <option value="4">Panetones D´Onofrio</option>
+                            <option value="5">Filete de Atún</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Precio (S/)</td>
+                    <td><input type="text" class="x" disabled id="numP1"></td>
+                </tr>
+                <tr>
+                    <td>Cantidad</td>
+                    <td><input type="number" class="x" value="0" min="0" max="20" id="numP2"></td>
+                </tr>
+                <tr>
+                    <td>Producto Total</td>
+                    <td><input type="text" class="x" disabled id="txtNota"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" style="width: 50%;" onclick="calcular()" value="Procesar"></td>
+                    <td><input type="button" class="btn" style="width: 20%;" onclick="limpiar()" value="Limpiar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

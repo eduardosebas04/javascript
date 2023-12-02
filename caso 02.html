@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso 02 | Javascript</title>
+    <link rel="stylesheet" href="css/caso02.css">
+    <script src="js/caso02.js" ></script>
+</head>
+<body>
+    <div>
+        <form action="">
+            <table class="tb">
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" style="width: 90%;" name="" id="txtNom"></td>
+                </tr>
+                <tr>
+                    <td>Distrito</td>
+                    <td>
+                        <select name="" style="width: 40%;" id="txtDistrito" onchange="mostrar_precio();">
+                            <option value="1">Lurin</option>                            
+                            <option value="2">Pachacamac</option>
+                            <option value="3">Cañete</option>
+                            <option value="4">Mala</option>
+                            <option value="5">Chincha</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Precio (S/)</td>
+                    <td><input type="text" name="" value="100" disabled id="txtPrecio"></td>
+                </tr>
+                <tr>
+                    <td>Largo </td>
+                    <td><input type="text" name="" id="txtLargo"> m</td>
+                </tr>
+                <tr>
+                    <td>Ancho </td>
+                    <td><input type="text" name="" id="txtAncho"> m</td>
+                </tr>
+                <tr>
+                    <td>Área </td>
+                    <td><input type="text" name="" disabled id="txtArea"> m2</td>
+                </tr>
+                <tr>
+                    <td>Valor (S/)</td>
+                    <td><input type="text" name="" disabled id="txtValor"> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" style="width: 50%;" onclick="procesar()" value="Procesar"></td>
+                    <td><input type="button" class="btn" style="width: 20%;" value="Limpiar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

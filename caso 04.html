@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso 04 | Javascript</title>
+    <script>
+        function calcular(){
+            var xres = "";
+            //Obtenr valores de los numbers
+            var p1 = document.getElementById('numP1').value;
+            var p2 = document.getElementById('numP2').value;
+            console.log("Valor de p2 : " + p2)
+            var p3 = document.getElementById('numP3').value;
+            //Hallar el promedio
+            var xprom = (parseFloat(p1) + parseFloat(p2) + parseFloat(p3))/3;
+            console.log("Promedio : " + xprom);
+            //Colocar el promedio
+            document.getElementById('txtNota').value = xprom;
+
+            //Determinando si está aprobado o desaprobado
+            if ( parseFloat(xprom) >= 11){
+                xres = "Aprobado";
+                document.getElementById('txtRes').style.color= "blue";
+            }else{
+                xres = "Desaprobado";
+                document.getElementById('txtRes').style.color= "red";
+            }
+            console.log("Resultado : " + xres);
+            document.getElementById('txtRes').value = xres;
+        }
+        function limpiar(){
+            document.getElementById('numP1').value = "";
+            document.getElementById('numP2').value = "";
+            document.getElementById('numP3').value = "";
+            document.getElementById('txtNota').value = "";
+            document.getElementById('txtRes').value = "";
+            document.getElementById('txtNota').focus(); //Focalizar
+        }
+    </script>
+    <style>
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+        }
+        table{
+            margin: auto;
+            width: 40%;
+        }
+        h3{
+            color: rgb(137, 137, 137);
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body onload="alert('Buenos días estimados alumnos')">
+    
+    <div>
+        <!--Banner-->
+        <img src="img/banner_colegio.jpg" alt="">
+    </div>
+    <div>
+        <!--Título-->
+        <h3>REGISTRO DE NOTAS</h3>
+    </div>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Curso</td>
+                    <td>
+                        <select name="" id="txtCurso">
+                            <option value="1">Python Básico</option>
+                            <option value="2">Javascript Básico</option>
+                            <option value="3">Java Básico</option>
+                            <option value="4">C# Básico</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Práctica 1</td>
+                    <td><input type="number" name="" value="0" min="0" max="20" id="numP1"></td>
+                </tr>
+                <tr>
+                    <td>Práctica 2</td>
+                    <td><input type="number" name="" value="0" min="0" max="20" id="numP2"></td>
+                </tr>
+                <tr>
+                    <td>Práctica 3</td>
+                    <td><input type="number" name="" value="0" min="0" max="20" id="numP3"></td>
+                </tr>
+                <tr>
+                    <td>Promedio Final</td>
+                    <td><input type="text" name="" disabled id="txtNota"></td>
+                </tr>
+                <tr>
+                    <td>Resultado</td>
+                    <td><input type="text" name="" disabled id="txtRes"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="calcular();" value="Procesar"></td>
+                    <td><input type="button" onclick="limpiar();" value="Limpiar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
